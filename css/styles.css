@@ -1,0 +1,45 @@
+@import url("normilize.css");
+
+* {
+  font-family: "Open Sans", Georgia, Serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main-heading {
+  background-color: whitesmoke;
+  padding: 2em;
+}
+
+.main-name {
+  font-size: 5em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-transform: uppercase;
+  background-color: white;
+  margin: 15px 0;
+  font-size: 2.5em;
+  padding: 25px;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+p {
+  color: slategrey;
+  font-size: 3em;
+}
+
+img {
+  margin: 100px auto 25px;
+  width: 66%
+}
