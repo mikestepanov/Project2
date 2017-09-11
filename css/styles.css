@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-.main-heading {
+.main-heading, .main-footer {
   background-color: whitesmoke;
   padding: 2em;
 }
@@ -28,18 +28,47 @@ li {
   display: block;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-size: 2.75em;
+  padding: 100px;
+}
+
+h3 {
+  font-size: 2.75em;
+  margin: 100px auto;
+}
+
+h5 {
+  font-size: 2.5em;
+}
+
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-p {
+.main-heading p, .main-footer p {
   color: slategrey;
   font-size: 3em;
 }
 
-img {
+p {
+  font-size: 3em;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.main-image {
   margin: 100px auto 25px;
   width: 66%
+}
+
+img {
+  width: 90%;
+}
+
+section {
+  margin-bottom: 100px;
 }
