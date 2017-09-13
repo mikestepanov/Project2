@@ -8,39 +8,40 @@
 
 .main-heading, .main-footer {
   background-color: whitesmoke;
-  padding: 2em;
+  padding: 1em;
 }
 
 .main-name {
-  font-size: 5em;
+  font-size: 1.5em;
 }
 
 ul {
   list-style-type: none;
 }
 
-li {
+.top_navigation li {
   text-transform: uppercase;
   background-color: white;
   margin: 15px 0;
-  font-size: 2.5em;
-  padding: 25px;
+  font-size: 1em;
+  padding: 10px;
   display: block;
+  margin: 5px auto;
 }
 
 h2 {
   text-transform: uppercase;
-  font-size: 2.75em;
-  padding: 100px;
+  font-size: 1em;
+  padding: 25px;
 }
 
 h3 {
-  font-size: 2.75em;
-  margin: 100px auto;
+  font-size: 1.15em;
+  margin: 25px auto;
 }
 
 h5 {
-  font-size: 2.5em;
+  font-size: 1.15em;
 }
 
 a {
@@ -49,26 +50,176 @@ a {
   font-weight: bold;
 }
 
-.main-heading p, .main-footer p {
+.description, .about_me {
   color: slategrey;
-  font-size: 3em;
+  font-size: 1.15em;
 }
 
 p {
-  font-size: 3em;
-  width: 85%;
-  margin: 0 auto;
+  font-size: 1em;
+  width: 90%;
+  margin: 0 auto 15px;
 }
 
 .main-image {
-  margin: 100px auto 25px;
+  margin: 25px auto;
   width: 66%
 }
 
 img {
-  width: 90%;
+  width: 100%;
+}
+
+.center {
+  margin: 0 auto;
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+
+.name-bottom {
+  float: left;
+}
+
+.back-to-top {
+  float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.bottom_navigation {
+  display: none;
+}
+
+hr {
+  width: 100%;
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .top_navigation li {
+    display: inline-block;
+    background-color: inherit;
+    font-size: 1em;
+    padding-bottom: 50px;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-name {
+    font-size: 1.5em;
+    padding: 15px;
+  }
+
+  .main-image {
+    float: right;
+    width: 40%;
+    margin-top: 0;
+  }
+
+  .description, .about_me {
+    float: left;
+    font-size: 1.5em;
+  }
+
+  .description {
+    width: 60%;
+    padding-right: 1em;
+  }
+
+  section {
+    width: 50%;
+    display: inline-block;
+    float: left;
+  }
+
+  h2 {
+    font-size: 0.9em;
+    padding: 50px;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    padding: 1em;
+    margin: 0;
+  }
+
+  section p {
+    font-size: 1em;
+    width: 80%;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .name-bottom {
+    font-size: 1.3em;
+  }
+
+  .about_me {
+    margin: 0 auto 40px;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  .bottom_navigation {
+    display: inline-block;
+    float: right;
+  }
+
+  .bottom_navigation li {
+    display: inline;
+    float: left;
+    padding: 20px;
+  }
+
+  .name-bottom {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    width: 33%;
+  }
+
+  .description {
+    text-align: left;
+    padding-left: 1.2em;
+    padding-top: 0;
+  }
+
+  .main-name {
+    float: left;
+    margin-top: 1em;
+    margin-left: 1em;
+  }
+
+  .top_navigation {
+    float: right;
+    margin-top: 2em;
+    margin-right: 2em;
+  }
+
+  .top_navigation li {
+    font-size: 0.9em;
+  }
+
+  .main-image {
+    padding: 0 1.1em;
+  }
+
+  .center {
+    width: 70%;
+  }
 }

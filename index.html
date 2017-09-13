@@ -7,21 +7,23 @@
   </head>
   <body>
     <header class="main-heading" id="top">
-      <h1 class="main-name">Mikhail Stepanov</h1>
-      <div class="navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#porfolio">Porfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="clearfix very_top">
+        <h1 class="main-name">Mikhail Stepanov</h1>
+        <div class="top_navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#portfolio">Porfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="greeting">
+      <div class="clearfix">
         <img class="main-image" src="images/responsive-layout-profile.png" alt="Picture of me.">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        <p class="description">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
       </div>
     </header>
-    <main>
-      <h2 id="portfolio">Porfolio</h2>
+    <main class="clearfix">
+      <h2 id="portfolio">Portfolio</h2>
       <section>
         <img src="images/portfolio-1.png" alt="Marketing Page image.">
         <h3>Marketing Page</h3>
@@ -59,15 +61,23 @@
       </section>
     </main>
 
-    <footer class="main-footer">
-      <h2 id="contact">Contact</h2>
-      <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-      <br />
-      <p>Phone <strong>+1 (111) 555-1234</strong></p>
-      <p>Email <strong>email@yoursite.com</strong></p>
-
+    <footer class="main-footer clearfix">
+      <div class="center clearfix">
+        <h2 id="contact">Contact</h2>
+        <p class="about_me">If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+        <p class="about_me">Phone <strong>+1 (111) 555-1234</strong></p>
+        <p class="about_me">Email <strong>email@yoursite.com</strong></p>
+      </div>
+      <hr />
       <h5 class="name-bottom">Mikhail Stepanov</h5>
       <h5 class="back-to-top"><a href="#top">Back to Top</a></h5>
+      <div class="bottom_navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#portfolio">Porfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
