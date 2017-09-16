@@ -15,7 +15,7 @@
   min-height: 100vh;
 }
 
-.everest, .main_nav, .about_me {
+.everest, .main_nav, .about_me, .main_content {
   display: flex;
   flex-direction: column;
 }
@@ -52,7 +52,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 li, h5, h2 {
@@ -64,6 +64,10 @@ li {
 
 article {
   margin-top: 2em;
+}
+
+hr {
+  width: 100%;
 }
 
 /*Phone styling ----------*/
@@ -96,5 +100,88 @@ h5 {
   font-size: 0.8em;
 }
 
+.main_footer {
+  padding-bottom: 0.5em;
+}
+
+.not_for_phone {
+  display: none;
+}
+
 @media (min-width: 769px) {
+  .not_for_phone {
+    display: inherit;
+  }
+
+  .main_header {
+    padding-top: 2em;
+  }
+
+  .main_nav {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about_me {
+    flex-direction: row-reverse;
+    margin-bottom: 2.5em;
+  }
+
+  .intro {
+    text-align: left;
+    padding-right: 1em;
+    margin-top: 0;
+    font-size: 1.5em;
+  }
+
+  .about_me_img {
+    width: 40%;
+    object-fit: contain;
+    height: 40%;
+  }
+
+  li {
+    background: inherit;
+  }
+
+  .main_article {
+    flex: 1 50%;
+    padding: 0.3em;
+  }
+
+  .main_footer p {
+    width: 70%;
+    font-size: 1.5em;
+    margin: 2em auto;
+  }
+
+  .main_footer {
+    padding-bottom: 3em;
+  }
+
+  .phone-only {
+    display: none;
+  }
+
+  h4 {
+    font-size: 1.1em;
+    margin-top: 0.75em;
+  }
+}
+
+@media (min-width: 1025px) {
+  .everest {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main_article {
+    flex: 33%;
+  }
 }

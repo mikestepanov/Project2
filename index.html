@@ -19,57 +19,65 @@
         </div>
         <section class="about_me">
           <img src="images/responsive-layout-profile.png" alt="Image of the author." class="about_me_img">
-          <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+          <p class="intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
         </section>
       </header>
 
-      <main class="main_content">
-        <h2 id="portfolio">Portfolio</h2>
-        <article class="main_article">
-          <img src="images/portfolio-1.png" alt="Marketing Page Image."/>
-          <h3>Marketing Page</h3>
-          <p>This project shows the front page of a marketing website meant for specific business I'm interested in.</p>
-        </article>
+      <main>
+        <h2 id="porfolio">Portfolio</h2>
+        <div class="main_content">
+          <article class="main_article">
+            <img src="images/portfolio-1.png" alt="Marketing Page Image."/>
+            <h3>Marketing Page</h3>
+            <p>This project shows the front page of a marketing website meant for specific business I'm interested in.</p>
+          </article>
 
-        <article class="main_article">
-          <img src="images/portfolio-2.png" alt="Search Page Image." />
-          <h3>Search Page</h3>
-          <p>This project searches through specific database to find information that the user is trying to look up.</p>
-        </article>
+          <article class="main_article">
+            <img src="images/portfolio-2.png" alt="Search Page Image." />
+            <h3>Search Page</h3>
+            <p>This project searches through specific database to find information that the user is trying to look up.</p>
+          </article>
 
-        <article class="main_article">
-          <img src="images/portfolio-3.png" alt="Travel App Image." />
-          <h3>Travel App</h3>
-          <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </article>
+          <article class="main_article">
+            <img src="images/portfolio-3.png" alt="Travel App Image." />
+            <h3>Travel App</h3>
+            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+          </article>
 
-        <article class="main_article">
-          <img src="images/portfolio-4.png" alt="Map of Favorite Spots Image." />
-          <h3>Map of Favorite Spots</h3>
-          <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking hour.</p>
-        </article>
+          <article class="main_article">
+            <img src="images/portfolio-4.png" alt="Map of Favorite Spots Image." />
+            <h3>Map of Favorite Spots</h3>
+            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking hour.</p>
+          </article>
 
-        <article class="main_article">
-          <img src="images/portfolio-5.png" alt="Photo Gallery Image." />
-          <h3>Photo Gallery</h3>
-          <p>This project shows pictures form a recent trip to the viewer and allows them to easily navigate through photos.</p>
-        </article>
+          <article class="main_article">
+            <img src="images/portfolio-5.png" alt="Photo Gallery Image." />
+            <h3>Photo Gallery</h3>
+            <p>This project shows pictures form a recent trip to the viewer and allows them to easily navigate through photos.</p>
+          </article>
 
-        <article class="main_article">
-          <img src="images/portfolio-6.png" alt="Calculator Image." />
-          <h3>Calculator</h3>
-          <p>Someone can enter in the numbers they want, and press the big blue button to get the result.</p>
-        </article>
+          <article class="main_article">
+            <img src="images/portfolio-6.png" alt="Calculator Image." />
+            <h3>Calculator</h3>
+            <p>Someone can enter in the numbers they want, and press the big blue button to get the result.</p>
+          </article>
+        </div>
       </main>
 
       <footer class="main_footer">
         <h2 id="contact">Contact</h2>
         <p>If you are interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p>Phone <strong>+1(111)555-1234</strong></p>
+        <p>Phone <strong>+1 (111) 555-1234</strong></p>
         <p>Email <strong>email@yoursite.com</strong></p>
+        <hr />
         <section class="very_bottom">
           <h4>Mikhail Stepanov</h4>
-          <h5><a href="#top">Back to top</a></h5>
+          <h5><a href="#top" class="phone-only">Back to top</a></h5>
+          <ul class="main_nav not_for_phone">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="#porfolio">Portfolio</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+          </ul>
         </section>
       </footer>
     </div>
