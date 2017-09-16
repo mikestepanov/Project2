@@ -12,13 +12,22 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-.everest, .main_nav {
+.everest, .main_nav, .about_me {
   display: flex;
   flex-direction: column;
 }
 
+.main_footer {
+  flex-grow: 1;
+}
+
+.very_bottom {
+  display: flex;
+  justify-content: space-between;
+}
 
 /*General Styling ----------*/
 
@@ -27,7 +36,11 @@
 }
 
 .main_header, .main_footer {
-  background: rgb(225, 225, 225);
+  background: rgb(250, 250, 250);
+}
+
+.main_header p, .main_footer p {
+  color: darkgrey;
 }
 
 ul {
@@ -42,6 +55,46 @@ img {
   width: 100%;
 }
 
+li, h5, h2 {
+  text-transform: uppercase;
+}
+li {
+  font-weight: bold;
+}
+
+article {
+  margin-top: 2em;
+}
+
+/*Phone styling ----------*/
+
+.about_me {
+  margin-top: 2.5em;
+}
+
+li {
+  background: white;
+  padding: 1em;
+  margin-bottom: 0.33em;
+}
+
+.about_me_img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 3.5em 0 2.5em;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
 @media (min-width: 769px) {
-/*Flex ----------*/
 }
